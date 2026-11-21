@@ -34,6 +34,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 - [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
+- [Star History](#star-history)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
@@ -143,6 +144,12 @@ The global third-party Android application distribution and mobile app managemen
 
 
 **Frameworks for building custom systems**: Combine **Obtainium**, **Droid-ify**, **fdroidserver**, and **Shizuku** with **App Manager** for fully automated, verifiable, and de-Googled Android app management.
+
+
+
+## Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Android-App-Management-Direct-APK-Updates&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Android-App-Management-Direct-APK-Updates&type=date&legend=top-left)
 
 
 
