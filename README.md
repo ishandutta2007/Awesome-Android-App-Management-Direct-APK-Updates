@@ -61,9 +61,9 @@ Commercial and cloud-hosted third-party app stores, catalog aggregators, and APK
 
 ## 🛠️ Open-Source Android App Managers & Updaters
 
-Curated open-source projects for updating, sideloading, compiling, and managing Android applications directly from upstream code repositories and decentralized catalogs. **Sorted by GitHub Stars (descending)**:
+Curated open-source projects for updating, sideloading, compiling, and managing Android applications directly from upstream code repositories and decentralized catalogs. **Sorted by GitHub_Stars (descending)**:
 
-| Project & Repo | Description | Stars |
+| Project & Repo | Description | GitHub_Stars |
 | :--- | :--- | :--- |
 | **[Magisk](https://github.com/topjohnwu/Magisk)** | The universal systemless interface for Android, enabling root access, low-level modules, and privileged system APK upgrades. | [![Stars](https://img.shields.io/github/stars/topjohnwu/Magisk?style=social&color=white)](https://github.com/topjohnwu/Magisk/stargazers) |
 | **[Shizuku](https://github.com/RikkaApps/Shizuku)** | Privileged API framework utilizing ADB/root system permissions to allow non-root app managers to perform silent, seamless background APK installations and updates. | [![Stars](https://img.shields.io/github/stars/RikkaApps/Shizuku?style=social&color=white)](https://github.com/RikkaApps/Shizuku/stargazers) |
@@ -101,7 +101,7 @@ Contributions to this ecosystem directory are always welcome! 🚀
 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a new branch** (`git checkout -b feature/new-app-manager`).
-3. 📝 **Add your entry** following the tabular format (ensure accurate stars badge, pricing, and company metrics).
+3. 📝 **Add your entry** following the tabular format (ensure accurate Stars_Badge, pricing, and company metrics).
 4. 🧪 **Check link validity** and ensure descriptions are factual and objective.
 5. 🚀 **Submit a Pull Request** with a brief summary of the project.
 
