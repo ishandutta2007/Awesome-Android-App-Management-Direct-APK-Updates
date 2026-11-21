@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; border-radius:12px; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3DDC84"/>
+      <stop offset="50%" stop-color="#07C160"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C4DFF"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(61, 220, 132, 0.05)" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1" fill="rgba(0, 229, 255, 0.15)"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Keyframe Animations */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(15px, -10px); opacity: 0.55; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes pulseRing {
+      0% { r: 35px; opacity: 0.6; }
+      50% { r: 50px; opacity: 0.1; }
+      100% { r: 35px; opacity: 0.6; }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -100; }
+    }
+
+    .bg-orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 150px 100px; }
+    .bg-orb-2 { animation: pulseOrb 10s ease-in-out infinite alternate; transform-origin: 1050px 260px; }
+    .pill-1 { animation: floatPill1 4s ease-in-out infinite; }
+    .pill-2 { animation: floatPill2 5s ease-in-out infinite; }
+    .pill-3 { animation: floatPill1 4.5s ease-in-out infinite 0.5s; }
+    .animated-ring { animation: pulseRing 3.5s ease-in-out infinite; }
+    .circuit-line { stroke-dasharray: 6 6; animation: dashCycle 5s linear infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <rect width="100%" height="100%" fill="url(#techGrid)"/>
+
+  <!-- Background Glowing Orbs (Deep in background, behind all text) -->
+  <g class="bg-orb-1" filter="url(#softGlow)">
+    <circle cx="160" cy="90" r="120" fill="#3DDC84"/>
+  </g>
+  <g class="bg-orb-2" filter="url(#softGlow)">
+    <circle cx="1040" cy="270" r="140" fill="#7C4DFF"/>
+  </g>
+  <g class="bg-orb-1" filter="url(#softGlow)">
+    <circle cx="980" cy="80" r="100" fill="#00E5FF"/>
+  </g>
+
+  <!-- Subtle Animated Circuit Paths (Background decoration) -->
+  <path class="circuit-line" d="M 80 320 L 250 320 L 290 280 L 450 280" fill="none" stroke="rgba(61, 220, 132, 0.25)" stroke-width="2"/>
+  <path class="circuit-line" d="M 750 60 L 890 60 L 930 100 L 1120 100" fill="none" stroke="rgba(0, 229, 255, 0.25)" stroke-width="2"/>
+
+  <!-- Visual Icon Graphic Left (Android APK Package Symbol) -->
+  <g transform="translate(75, 120)">
+    <!-- Outer Pulsing Ring -->
+    <circle class="animated-ring" cx="50" cy="50" r="42" fill="none" stroke="#3DDC84" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="50" cy="50" r="36" fill="#131e33" stroke="url(#primaryGrad)" stroke-width="2.5" filter="url(#glow)"/>
+    <!-- Android Bug Head / APK Package Icon -->
+    <path d="M 36 46 A 14 14 0 0 1 64 46 Z" fill="#3DDC84"/>
+    <circle cx="41" cy="41" r="1.5" fill="#0d1527"/>
+    <circle cx="59" cy="41" r="1.5" fill="#0d1527"/>
+    <line x1="39" y1="34" x2="36" y2="30" stroke="#3DDC84" stroke-width="2" stroke-linecap="round"/>
+    <line x1="61" y1="34" x2="64" y2="30" stroke="#3DDC84" stroke-width="2" stroke-linecap="round"/>
+    <!-- Download / Direct Update Arrow -->
+    <path d="M 50 49 L 50 65 M 43 59 L 50 66 L 57 59" fill="none" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Main Foreground Content (Title, Subtitle, Badges) -->
+  <!-- Top Category Tag -->
+  <g transform="translate(195, 78)">
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="rgba(61, 220, 132, 0.12)" stroke="rgba(61, 220, 132, 0.4)" stroke-width="1"/>
+    <circle cx="12" cy="13" r="4" fill="#3DDC84"/>
+    <text x="26" y="17" fill="#3DDC84" font-size="11" font-weight="700" letter-spacing="1.2">CURATED ECOSYSTEM DIRECTORY</text>
+  </g>
+
+  <!-- Main Title (Strictly foreground, crisp and clear) -->
+  <text x="195" y="138" fill="#FFFFFF" font-size="34" font-weight="800" letter-spacing="-0.5">
+    Awesome Android App Management
+  </text>
+  <text x="195" y="178" fill="url(#primaryGrad)" font-size="28" font-weight="700" letter-spacing="-0.3">
+    &amp; Direct APK Updates Ecosystem
+  </text>
+
+  <!-- Subtitle -->
+  <text x="195" y="215" fill="#94A3B8" font-size="15" font-weight="400">
+    Curated SaaS marketplaces, direct release updaters, F-Droid repositories, and split-APK package managers.
+  </text>
+
+  <!-- Interactive/Dynamic Feature Pills (Bottom Bar) -->
+  <g class="pill-1" transform="translate(195, 255)">
+    <rect width="180" height="38" rx="8" fill="rgba(19, 30, 51, 0.85)" stroke="rgba(61, 220, 132, 0.35)" stroke-width="1.2"/>
+    <text x="16" y="24" fill="#E2E8F0" font-size="13" font-weight="600">⚡ Direct APK Updates</text>
+  </g>
+
+  <g class="pill-2" transform="translate(390, 255)">
+    <rect width="180" height="38" rx="8" fill="rgba(19, 30, 51, 0.85)" stroke="rgba(0, 229, 255, 0.35)" stroke-width="1.2"/>
+    <text x="16" y="24" fill="#E2E8F0" font-size="13" font-weight="600">🛡️ F-Droid &amp; FOSS Catalogs</text>
+  </g>
+
+  <g class="pill-3" transform="translate(585, 255)">
+    <rect width="195" height="38" rx="8" fill="rgba(19, 30, 51, 0.85)" stroke="rgba(124, 77, 255, 0.35)" stroke-width="1.2"/>
+    <text x="16" y="24" fill="#E2E8F0" font-size="13" font-weight="600">📦 Split APKs &amp; Repomaker</text>
+  </g>
+
+  <g class="pill-1" transform="translate(795, 255)">
+    <rect width="175" height="38" rx="8" fill="rgba(19, 30, 51, 0.85)" stroke="rgba(61, 220, 132, 0.35)" stroke-width="1.2"/>
+    <text x="16" y="24" fill="#E2E8F0" font-size="13" font-weight="600">🔐 Signature Verifiers</text>
+  </g>
+</svg>
