@@ -31,65 +31,32 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saashosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
+
+
+
+## Sector Overview & Market Dynamics
+
+The global third-party Android application distribution and mobile app management sector is estimated at roughly $4B–$6B annually (as part of the broader $200B+ mobile app store and enterprise mobility ecosystem). The market exhibits a bifurcated structure: while the commercial third-party store space is moderately concentrated around established players (e.g., Amazon Appstore, Aptoide, Uptodown) alongside regional OEM marketplaces, the direct-update, FOSS, and self-hosted app management niche remains highly fragmented and driven by community-led open-source tools and independent repositories.
 
 
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[APKMirror](https://apkmirror.com)**  
-
-  Cryptographically verified public repository hosting free APKs, split APKs (APKM), and historical app versions.
-
-
-
-- **[APKPure](https://apkpure.com)**  
-
-  Alternative web and mobile app distribution platform offering direct APK/XAPK downloads and version archives.
-
-
-
-- **[Uptodown](https://uptodown.com)**  
-
-  Multi-platform open app marketplace providing malware-scanned direct APK downloads and rollback histories.
-
-
-
-- **[Aptoide](https://aptoide.com)**  
-
-  Decentralized Android app marketplace allowing users and developers to create and manage independent app stores.
-
-
-
-- **[Amazon Appstore](https://amazon.com)**  
-
-  Commercial third-party Android app store offering curated apps, games, and cross-device software distribution.
-
-
-
-- **[AppBrain](https://appbrain.com)**  
-
-  App discovery, analytics, and management platform featuring curated lists, price-drop alerts, and install tracking.
-
-
-
-- **[SlideME](http://slideme.org)**  
-
-  Long-standing independent Android application marketplace geared toward alternative devices and global distribution.
-
-
-
-- **[Mobogenie](https://mobogenie.com)**  
-
-  Legacy desktop and mobile Android suite for APK installation, backup management, and app discovery.
+| Platform | Description | Pricing Model | Free Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[APKMirror](https://apkmirror.com)** | Cryptographically verified public repository hosting free APKs, split APKs (APKM), and historical app versions. | Free (Ad-supported) / Optional Premium Subscription | Free tier includes full access to downloads with standard-speed ad-supported web access |
+| **[APKPure](https://apkpure.com)** | Alternative web and mobile app distribution platform offering direct APK/XAPK downloads and version archives. | Free (Ad-supported) / Developer Services | Free direct downloads and basic client usage with ad-supported interface |
+| **[Uptodown](https://uptodown.com)** | Multi-platform open app marketplace providing malware-scanned direct APK downloads and rollback histories. | Free (Ad-supported) / Developer Revenue Share | Free unlimited app downloads, malware inspection reports, and version rollbacks |
+| **[Aptoide](https://aptoide.com)** | Decentralized Android app marketplace allowing users and developers to create and manage independent app stores. | Free / Rev-share for in-app purchases (AppCoins) | Free for public store hosting, browsing, and community downloads |
+| **[Amazon Appstore](https://amazon.com)** | Commercial third-party Android app store offering curated apps, games, and cross-device software distribution. | Free for consumers / Developer fee rev-share | Free client and app downloads for end-users |
+| **[AppBrain](https://appbrain.com)** | App discovery, analytics, and management platform featuring curated lists, price-drop alerts, and install tracking. | Freemium / Paid developer promotion & data plans | Free tier includes basic app discovery, browse filters, and basic market analytics |
+| **[SlideME](http://slideme.org)** | Long-standing independent Android application marketplace geared toward alternative devices and global distribution. | Free for users / Revenue share on paid apps | Free registration and downloading of free catalog apps |
+| **[Mobogenie](https://mobogenie.com)** | Legacy desktop and mobile Android suite for APK installation, backup management, and app discovery. | Free (Ad-supported) | Free access to base software utilities and public downloads |
 
 
 
